@@ -9,7 +9,7 @@ export default function({scrollToBottom, scrollViewRef, sendMessage, styles, mes
         <ScrollView 
           ref={scrollViewRef} 
           style={styles.messages}
-          onContentSizeChange={() => scrollToBottom()} // Auto-scrolls when new content arrives
+          onContentSizeChange={() => scrollToBottom()} 
         >
           {messages.map((msg, index) => (
             <MessageBubble 
